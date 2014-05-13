@@ -1,0 +1,31 @@
+/* Written by Robert Krossa and Stephen Grinich */
+
+body{
+	background-color:#87CEEB;
+	text-align: center;
+	color:white:;
+}
+#PageTitle {
+	font-size: 40pt;
+	color: #696969;
+}
+form{
+	color:#696969;
+}
+#chart{
+	width:50%;
+	margin:0 auto;
+}
+#sourceTable {
+	border-width: 2px;
+	border-style:solid;
+	padding:10px;
+	margin: 10px;
+	width:10%;
+	float:center;
+	text-decoration:underline;
+}
+#alert{
+	color:red;
+	font-size:18pt;
+}

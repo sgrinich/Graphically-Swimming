@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<!-- Written by Stephen Grinich and Robert Krossa -->
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="swimstyle.css">
+
+		<script class="include" type="text/javascript" src="js/plot.js"></script>
+	    <script class="include" type="text/javascript" src="js/jquery.min.js"></script>
+    	<script class="include" type="text/javascript" src="js/jquery.jqplot.min.js"></script>
+    	<script class="include" type="text/javascript" src="js/plugins/jqplot.dateAxisRenderer.min.js"></script>
+    	<script class="include" type="text/javascript" src="js/plugins/jqplot.canvasTextRenderer.min.js"></script>
+    	<script class="include" type="text/javascript" src="js/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+    	<script class="include" type="text/javascript" src="js/plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+
+    </head>
+
+    <title>Graphically Swimming</title>
+    <p id="PageTitle">Graphically Swimming</p>
+
+    <div id='alert'><p>%s</p></div>
+    <form onsubmit="return onChartButton();">
+		Swimmer Name: 
+		<input type="text" name="swimmername" value ="%s">
+		<p> Events:
+			<select name="event">
+				<option value='50 Free'>50 Free</option>
+				<option value='100 Free'>100 Freestyle</option>
+				<option value='200 Free'>200 Freestyle</option>
+				<option value='500 Free'>500 Freestyle</option>
+				<option value='1650 Free'>1650 Freestyle</option>
+				<option value='100 Fly'>100 Butterfly</option>
+				<option value='200 Fly'>200 Butterfly</option>
+				<option value='100 Back'>100 Backstroke</option>		
+				<option value='200 Back'>200 Backstroke</option>
+				<option value='100 Breast'>100 Breaststroke</option>
+				<option value='200 Breast'>200 Breaststroke</option>
+				<option value='200 IM'>200 IM</option>
+				<option value='400 IM'>400 IM</option>	
+			</select>
+		</p>
+
+		<p>
+			Choose Course:
+			<input type ="radio" name = 'course' value = 'SCY' %s>Short Course
+			<input type ="radio" name = 'course' value = 'LCM' %s>Long Course<br>
+		</p>
+
+		<input type="submit" value="Submit">
+		</form>
+		<button onclick="onChartButton()" value="onChartButton()">Create Chart</button>
+
+		<br></br>
+
+		<div id="chart" style="height:600px; width:1000px;"></div>
+
+		<p> Current Searchable names: Stephen Grinich, Eli Danson, Ross Brown, Robert Krossa, George McAneny. Only Stephen has LCM events. 
+		</p>
+
+		<div id='sourceTable'>
+			<p>Relevant Links</p>
+			<p><a href="index.py?showsource=index.py">index.py source</a></p>
+			<p><a href="index.py?showsource=datasource.py">datasource.py source</a></p>
+			<p><a href="index.py?showsource=template.html">template.html source</a></p>
+			<p><a href="index.py?showsource=readme.html">readme.html source</a></p>
+			<p><a href="index.py?showsource=plot.js">plot.js source</a></p>
+			<p><a href="index.py?showsource=swimstyle.css">swimstyle.css source</a></p>
+
+		</div>
+
+		<div id='testTable'></div>
+
+</html>
+

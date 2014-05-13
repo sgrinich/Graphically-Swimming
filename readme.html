@@ -1,0 +1,33 @@
+Stephen Grinich and Robert Krossa
+
+This project uses swim times pulled from usaswimming.com to graphically represent a swimmer's progress over the period of time defined by that set of times. A user can search for a swimmer in the database, choose an official event that they may have swam, and choose between short-course-yards or long-course-meters competiiton pools. After selecting required credentials, a graph of the chosen swimmer's times is presented with date of race on the x-axis and time of the event in seconds on the y-axis. The time range spans all of the times inputed into the psql table. 
+
+
+Citations:
+
+-- http://www.jqplot.com/ for a library to create graph. 
+		Terms of Use:
+		http://www.jqplot.com/docs/files/MIT-LICENSE-txt.html
+
+-- http://www.usaswimming.org for official swim times. 
+		Times Data:
+		http://www.usaswimming.org/DesktopDefault.aspx?TabId=1470&Alias=Rainbow&Lang=en-US (Must search for name)
+		Part of Terms of Use:
+		All “Content” found on this website, including, but not limited to, photographs, graphics, editorial content, results, database information and any other text is the sole property of USA Swimming or its partners, and all rights are reserved. The logos appearing on the Site which identify USA Swimming and/or its products and services are proprietary marks. The Content of this website are for your personal or informational use only.
+
+
+Changed Features and Goals:
+-- Exporting was not implemented. 
+-- Changing time range was not implemented – it looked better to show the whole swimmer's career. 
+
+
+Would Have Been Helpful Information: 
+-- An easy way to debug javascript
+-- Knowing of the existence of jqplot. 
+
+Program used to create times table
+<a href="tables.sql">Tables.sql</a>
+We also created another table with just names and ID numbers, for lookup in the times table, however we did this manually.
+
+
+
